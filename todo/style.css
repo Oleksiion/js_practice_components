@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+.wrapper {
+  display: block;
+  border: 1px solid black;
+  max-width: 600px;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(234, 137, 19, 0.318);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.input-wrapper {
+  background-color: white;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.input {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  user-select: none;
+  padding-left: 30px;
+  outline: none;
+  font-size: 20px;
+}
+.btn {
+  width: 200px;
+  /* width: 100px; */
+  border-radius: 30px;
+  background-color: bisque;
+  /* position: absolute; */
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.list-wrapper {
+  /* border: 1px solid black; */
+  padding-inline: 40px;
+}
+
+li {
+  /* text-decoration: none; */
+  border: 1px solid black;
+  list-style: none;
+
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+li::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: -40px;
+  /* top: auto; */
+}
+
+ul li span {
+  /* display: inline-flex; */
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  /* justify-content: center; */
+  font-size: 30px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(./images/checked.png);
+}

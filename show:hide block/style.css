@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-inline: auto;
+  padding-block: 10px;
+  border-radius: 30px;
+}
+.content {
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 30px;
+}
+.hidden {
+}
+.wrapper {
+  width: 700px;
+  margin: 20px auto;
+}
+h1 {
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #fff;
+}
+
+.hidden {
+  display: none;
+  /* visibility: hidden; */
+}
